@@ -1,0 +1,5 @@
+1. to start the project, first open two terminal windows
+2. In first window, type: sudo mongod
+3.  That will start the database.
+4.  In the next window, type:  nodemon server.js
+5. Open browser and go to localhost:8000
