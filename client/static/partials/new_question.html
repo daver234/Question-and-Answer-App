@@ -1,0 +1,15 @@
+<div ng-controller="newQuestion_Controller">
+	<div class='container'>
+	<h4 style='color:red;' ng-bind='errors'></h4>
+	
+	
+
+		<p>Question</p>
+		<textarea id="addQuestion" ng-model='new_question.question' class="form-control"></textarea>
+		<p>Description (optional)</p>
+		<textarea id='addDescription' class="form-control" ng-model='new_question.description'></textarea>
+		<br>
+		<input type='submit' class='btn btn-primary' ng-click="addQuestion()" value='submit' >
+	
+
+	</div>

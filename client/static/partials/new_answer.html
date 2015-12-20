@@ -1,0 +1,36 @@
+<div ng-controller="newAnswer_Controller">
+
+	
+	
+	  <h1 ng-bind="question.question"></h1>
+	  <h4 ng-bind="question.description"></h4>
+	<!--   <h4 ng-bind="question._id"></h4>
+ -->	  
+ 		<h4 style='color:red;' ng-bind='errors'></h4>
+		<br>
+		<br>
+
+		<div class="form-group">
+            <label>What is your answer <span >{{username}}</span>: </label>
+            <textarea ng-model="new_answer.answer" id='addQuestion1' class="form-control"></textarea>
+        </div>
+        <div class="form-group">
+            <label>Supporting details for your answer (optional)</label>
+
+            <textarea ng-model="new_answer.details" id='answer' class="form-control"></textarea>
+        </div>
+        <div class="form-group">
+            <a href="#/" id='cancel' class="form-control btn btn-primary">Cancel</a>
+            <button ng-click="addAnswer()" id='submit' class="btn btn-success">Submit</button>
+        </div>
+
+
+  	<!-- <form>
+    	<p>Your Answer: <textarea id='addQuestion' class="form-control" ng-model="new_answer.answer"></textarea></p>
+    	<h4 ng-bind="q._id"></h4>
+    	<p>Supporting details for your answer: (optional) <textarea id='addQuestion' class="form-control" ng-model="new_answer.details"></textarea></p>
+    	<a ng-href="#/">Cancel</a>
+    	<input type="submit" class="btn btn-success" ng-click='addAnswer(q._id)' value="Submit">
+	</form> -->
+ 
+</div>
